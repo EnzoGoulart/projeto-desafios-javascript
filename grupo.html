@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="grupo.css">
+</head>
+<body>
+    <p id="p1">Hora do dia</p>
+    <div id="div1">
+        <span onclick="aparecer()" id="icone1" class="material-symbols-outlined">
+            expand_more
+            </span>
+        <span onclick="aparecer()"  id="icone2" class="material-symbols-outlined">
+                expand_less
+                </span>
+    </div>
+    <div id="div2">
+        <p id="bomdia">Bom dia!</p>
+        <p id="hora">Agora são 10 horas.</p>
+        <img id="img1" src="FotoDia.jpg" alt="foto">
+        <p id="fe1">Feito por Enzo</p>        
+    </div>
+    <p id="p2">Contagem básica</p>
+    <div id="div3">
+        <span onclick="aparecer2()" id="icone3" class="material-symbols-outlined">
+            expand_more
+            </span>
+        <span onclick="aparecer2()"  id="icone4" class="material-symbols-outlined">
+                expand_less
+                </span>
+    </div>
+    <div id="div4">
+        <label id="l1" for="inicio">Início</label>
+        <input id="inicio" type="text">
+        <label for="fim">Fim</label>
+        <input type="text" name="fim" id="fim" >
+        <label for="passo">Passo</label>
+        <input type="text" name="passo" id="passo">
+        <input type="button" value="Calcular" onclick="calcular()" id="botao1">
+        <div id="div5">
+
+        </div>
+    </div>
+    <p id="p3">Tabuada</p>
+    <div id="div6">
+        <span onclick="aparecer3()" id="icone5" class="material-symbols-outlined">
+            expand_more
+            </span>
+        <span onclick="aparecer3()"  id="icone6" class="material-symbols-outlined">
+                expand_less
+                </span>
+    </div>
+    <div id="div7">
+
+            <label id="labelnum" for="num">Número:</label>
+            <input id="num" type="number">
+            <input type="button" id="botao2" value="Confirmar" onclick="selectfunction()">
+            <p id="perror2">Há campos vazios, preencha-os.</p>
+            <select name="select1" id="select1" size="10">
+            </select>
+        
+    </div>
+    <p id="p4">Analisador</p>
+    <div id="div8">
+        <span onclick="aparecer4()" id="icone7" class="material-symbols-outlined">
+            expand_more
+            </span>
+        <span onclick="aparecer4()"  id="icone8" class="material-symbols-outlined">
+                expand_less
+                </span>
+    </div>
+    <div id="div9">
+        <label id="labelnum2" for="num2">Número (entre 0 e 100)</label>
+        <input type="text" name="num2" id="num2">
+        <button onclick="add()"  id="botao3">Adicionar</button>
+        <button onclick="finalizar()" id="botao4">Finalizar</button>
+        <div id="div10"></div>
+        <div id="div11">
+        </div>
+        <div id="div12">
+            
+        </div>
+    </div>
+<script src="grupo.js"></script>
+</body>
+</html>
