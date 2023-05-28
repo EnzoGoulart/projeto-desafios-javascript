@@ -8,12 +8,24 @@ let i6 = document.getElementById('icone6')
 let i7 = document.getElementById('icone7')
 let i8 = document.getElementById('icone8')
 let div9 = document.getElementById('div9')
+
+let inicio1 = document.getElementById('inicio');
+let fim1 = document.getElementById('fim');
+let passo1 = document.getElementById('passo');
+let div5 = document.getElementById('div5');
+let errorcheck = 0
 let data = new Date()
 let horario = data.getHours()
 let min = data.getMinutes()
 let bom = document.getElementById('bomdia')
 let hora = document.getElementById('hora')
 let img1 = document.getElementById('img1')
+if(min<10){
+    min = `0${min}`
+}
+if(horario<10){
+    horario = `0${horario}`
+}
 if (horario >= 5 && horario < 12) {
     bom.innerHTML = 'Bom dia!'
     hora.innerHTML = `Agora são ${horario}:${min}.`
@@ -75,14 +87,7 @@ function aparecer4() {
         div9.style.display = 'none'
     }
 }
-let inicio1 = document.getElementById('inicio');
-let fim1 = document.getElementById('fim');
-let passo1 = document.getElementById('passo');
-let div5 = document.getElementById('div5');
-let errorcheck = 0
 function calcular() {
-
-
     if (inicio1.value.length == 0 || fim1.value.length == 0 || passo1.value.length == 0) {
         if (errorcheck < 1) {
             div5.innerHTML = '<p id="perror">Há campos vazios, preencha-os.</p>'

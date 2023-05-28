@@ -6,7 +6,7 @@
 }
 body{
     background-image: linear-gradient(-45deg,rgb(2, 0, 124), rgb(85, 173, 255), rgb(0, 32, 121), rgb(0, 183, 255));
-    background-size: 300vw 300vw;
+    background-size: 300vw 600vw;
     background-repeat: no-repeat;
 }
 #p1{
@@ -271,4 +271,41 @@ body{
 #final11{
     border-top: 2px dotted rgba(0, 0, 0, 0.603);
     border-radius: 50%;
+}
+.iconesOn{
+    animation: iconesOn 1s ease-in 1 forwards;
+}
+.iconesOut{
+    animation: iconesOut 1s ease-in 1 forwards;
+}
+
+@media screen and (width < 448px) {
+    .ms{
+        min-width: 9px;
+    }
+    input{
+        padding: 3px 2px 3px 20px;
+        width: 50%;
+    }
+    #icone1, #icone3,#icone5,#icone7{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #icone2, #icone4,#icone6, #icone8{
+        position: absolute;
+        margin-left: 6px;
+    }
+    #div1, #div3, #div6, #div8{
+        position: absolute;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+    label{
+        margin: 10px 0px;
+    }
+    #img1{
+        width: 140px;
+        height: 140px;
+    }
 }
